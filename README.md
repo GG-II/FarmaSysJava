@@ -24,7 +24,7 @@ src/
 ## Instalación y ejecución
 
 1. Clona el repositorio:
-git clone https://github.com/tu-usuario/JavaFarmaSys.git
+git clone [https://github.com/tu-usuario/JavaFarmaSys.git](https://github.com/GG-II/FarmaSysJava.git)
 
 2. Abre el proyecto en tu IDE favorito (por ejemplo, NetBeans o IntelliJ IDEA).
 3. Configura la conexión a la base de datos en el archivo `conexionBD.java`.
