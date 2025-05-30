@@ -30,6 +30,19 @@ public class InventarioMenu extends javax.swing.JPanel {
         this.medicinaDAO = new MedicinaDAO();
         initComponents();
         cargarMedicinas();
+
+        // Acción para Enter en la barra de búsqueda
+        barraBusqueda.addActionListener(new java.awt.event.ActionListener() {
+            @Override
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                String textoBusqueda = barraBusqueda.getText().trim();
+                if (textoBusqueda.isEmpty()) {
+                    cargarMedicinas();
+                } else {
+                    buscarMedicinas(textoBusqueda);
+                }
+            }
+        });
     }
 
     // Método para cargar todas las medicinas en la tabla
