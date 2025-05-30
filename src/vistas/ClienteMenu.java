@@ -29,6 +29,13 @@ public class ClienteMenu extends javax.swing.JPanel {
         this.clienteDAO = new ClienteDAO();
         initComponents();
         cargarClientes();
+        
+        barraBusqueda.addActionListener(new java.awt.event.ActionListener() {
+            @Override
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buscarClientes();
+            }
+        });
     }
     
     private void cargarClientes() {
